@@ -1,0 +1,4 @@
+db:shopfork_crm
+user:shopfork_crm
+qQRC5RyjO
+

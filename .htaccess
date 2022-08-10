@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule "index.html" "index.php"
+RewriteRule "^([a-zA-Z0-9]+)$" "?components=$1"
+RewriteRule "^([a-zA-Z0-9]+)/Logout" "?components=$1&action=Logout"
+RewriteRule "^([a-zA-Z0-9_]+)/([a-zA-Z0-9]+)$" "?components=$1&action=$2"
+RewriteRule "^([a-zA-Z0-9_]+)/print/([a-zA-Z0-9]+)$" "?components=$1&action=print&msxn=$2"
+
+
+RewriteRule "api/^([a-zA-Z0-9_]+)$" "?components=api&action=$1"
+RewriteRule "api/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)$" "?components=api&action=$1&method=$2"

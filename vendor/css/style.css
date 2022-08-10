@@ -1,0 +1,62 @@
+.card_body_khachhang {
+  padding: 10px 0 0 0;
+}
+.center {
+  text-align: center;
+}
+.width_100 {
+  width: 100%;
+}
+.left {
+  text-align: left !important;
+}
+.card_header_khachhang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px !important;
+}
+.control_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+#btn_add_chitiet.hidden {
+  display: none;
+}
+.khachhang_tbody tr:hover {
+  cursor: pointer;
+}
+#khachhang_table_header {
+  max-height: 270px;
+}
+.chart_loc {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 15px;
+}
+.Input_Style {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #dddddd;
+  width: 20%;
+  background: none;
+  padding: 6px 0px 6px 0px;
+  margin-right: 10px;
+}
+.datepicker_khachhang {
+  width: 110px;
+  margin: 0 10px;
+}
+
+.khachhang_filter_div select {
+  width: 160px;
+  margin: 0 10px;
+}
+.khachhang_tr.active {
+  background-color: #4e73df;
+  color: #fff;
+}
+.linktailieu_td:hover {
+  cursor: pointer;
+}
