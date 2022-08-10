@@ -24,6 +24,7 @@
 
 </head>
 <?php
+//$_COOKIE nayf tk dang nhap
 if (isset($_COOKIE['msdv']) && $_COOKIE['msdv'] != "") { ?>
 
     <body id="page-top">
@@ -120,13 +121,7 @@ if (isset($_COOKIE['msdv']) && $_COOKIE['msdv'] != "") { ?>
                                             <div class="col-lg-12">
                                                 <div class="p-4">
                                                     <div class="text-center">
-                                                        <?php
-                                                        if ($_SERVER['HTTP_HOST'] == 'crm.cilaf.vn') {
-                                                            echo '<img src="vendor/img/logo_cilaf.jpg" alt="" style="width:14em; margin-bottom:0px">';
-                                                        } else {
-                                                            echo '<img src="vendor/img/chu_tpsoft_115.png" alt="" style="width:14em; margin-bottom:20px">';
-                                                        }
-                                                        ?>
+                                                        <img src="vendor/img/chu_tpsoft_115.png" alt="" style="width:14em; margin-bottom:20px">
                                                     </div>
                                                     <form class="user" method="post" enctype="multipart/form-data">
                                                         <div class="form-group">
